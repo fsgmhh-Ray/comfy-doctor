@@ -26,6 +26,12 @@ export const translations = {
     civitaiSearch: "Civitai",
     customNodesTitle: "Detected Custom / Third-Party Nodes",
     noCustomNodes: "Workflow uses standard official ComfyUI nodes only.",
+    cloudPromoTitle: "Run this workflow in the Cloud (Zero local setup)",
+    cloudPromoDesc: "Lacking local VRAM or tired of downloading 30GB+ weights? Deploy instantly on high-speed cloud GPUs:",
+    runpodBtn: "Deploy on RunPod (1-Click ComfyUI)",
+    vastBtn: "Rent Budget GPU on Vast.ai ($0.2+/h)",
+    amazonGpuTitle: "Upgrade Local GPU on Amazon",
+    amazonGpuDesc: "Check 16GB / 24GB VRAM cards for stable local generation (RTX 4070Ti Super / 4090).",
     faqTitle: "Frequently Asked Questions (FAQ)",
     faqs: [
       {
@@ -74,6 +80,12 @@ export const translations = {
     civitaiSearch: "Civitai 检索",
     customNodesTitle: "检测到的自定义/第三方节点",
     noCustomNodes: "工作流仅使用 ComfyUI 原生官方节点。",
+    cloudPromoTitle: "云端一键运行此工作流（免本地配置）",
+    cloudPromoDesc: "本地显存不足或不想下载数十 GB 大模型？可直接在云端高显存 GPU 实例上一键加载：",
+    runpodBtn: "在 RunPod 一键启动 ComfyUI",
+    vastBtn: "在 Vast.ai 租用高性价比 GPU",
+    amazonGpuTitle: "在 Amazon 升级本地显存配置",
+    amazonGpuDesc: "查看适合本地部署的 16GB / 24GB 显卡推荐（RTX 4070Ti Super / 4090）。",
     faqTitle: "常见问题解答 (FAQ)",
     faqs: [
       {

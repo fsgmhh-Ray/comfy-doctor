@@ -238,7 +238,78 @@ export default function App() {
               </div>
             )}
           </div>
+          {/* 算力租赁与硬件升级转化卡片 (Affiliate 商业化) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* 云端一键跑图 (RunPod & Vast.ai) */}
+            <div className="p-4 rounded-xl border border-indigo-900/40 bg-gradient-to-br from-indigo-950/40 to-slate-900 flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-wider text-indigo-400 block mb-1">
+                  Cloud Compute
+                </span>
+                <h3 className="text-sm font-semibold text-slate-200 mb-1">
+                  {t.cloudPromoTitle}
+                </h3>
+                <p className="text-xs text-slate-400 mb-4 leading-relaxed">
+                  {t.cloudPromoDesc}
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-800">
+                <a
+                  href="https://runpod.io?ref=4p0p3b86"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-3 py-1.5 rounded-lg bg-indigo-600/90 hover:bg-indigo-600 text-white text-xs font-medium flex items-center gap-1.5 transition"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  {t.runpodBtn}
+                </a>
+                <a
+                  href="https://cloud.vast.ai/?ref_id=688806"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-3 py-1.5 rounded-lg border border-slate-700 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium flex items-center gap-1.5 transition"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                  {t.vastBtn}
+                </a>
+              </div>
+            </div>
 
+            {/* 本地显卡升级 (Amazon Associates) */}
+            <div className="p-4 rounded-xl border border-amber-900/40 bg-gradient-to-br from-amber-950/20 to-slate-900 flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-wider text-amber-400 block mb-1">
+                  Hardware Upgrade
+                </span>
+                <h3 className="text-sm font-semibold text-slate-200 mb-1">
+                  {t.amazonGpuTitle}
+                </h3>
+                <p className="text-xs text-slate-400 mb-4 leading-relaxed">
+                  {t.amazonGpuDesc}
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-800">
+                <a
+                  href="https://www.amazon.com/s?k=RTX+4070+Ti+Super+16GB&tag=vramspec-20"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-3 py-1.5 rounded-lg border border-amber-800/60 bg-amber-950/40 hover:bg-amber-900/50 text-amber-200 text-xs font-medium flex items-center gap-1.5 transition"
+                >
+                  <Search className="w-3.5 h-3.5" />
+                  RTX 4070 Ti Super (16GB)
+                </a>
+                <a
+                  href="https://www.amazon.com/s?k=RTX+4090+24GB&tag=vramspec-20"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-3 py-1.5 rounded-lg border border-amber-800/60 bg-amber-950/40 hover:bg-amber-900/50 text-amber-200 text-xs font-medium flex items-center gap-1.5 transition"
+                >
+                  <Search className="w-3.5 h-3.5" />
+                  RTX 4090 (24GB)
+                </a>
+              </div>
+            </div>
+          </div>
           {/* 模型依赖列表 */}
           <div className="p-4 rounded-xl border border-slate-800 bg-slate-900">
             <div className="flex items-center justify-between mb-3">
