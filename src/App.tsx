@@ -1,5 +1,5 @@
 // src/App.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import { extractComfyMetadata } from "./utils/pngParser";
 import { analyzeWorkflow, type AnalysisReport } from "./utils/workflowAnalyzer";
 import { sanitizeWorkflowData, downloadJsonFile } from "./utils/workflowSanitizer";

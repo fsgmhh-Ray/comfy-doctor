@@ -92,7 +92,7 @@ export function analyzeWorkflow(workflow: any, prompt: any): AnalysisReport {
 
   // 2. 若无 nodes 则从 prompt (API 格式) 辅助补全
   if (models.length === 0 && prompt && typeof prompt === "object") {
-    for (const [id, nodeData] of Object.entries<any>(prompt)) {
+    for (const [, nodeData] of Object.entries<any>(prompt)) {
       const classType = nodeData.class_type || "";
       if (!OFFICIAL_NODE_TYPES.has(classType)) {
         customNodesSet.add(classType);

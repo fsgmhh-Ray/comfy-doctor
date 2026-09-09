@@ -44,7 +44,7 @@ export function sanitizeWorkflowData(
   if (cleanedWorkflow?.nodes && Array.isArray(cleanedWorkflow.nodes)) {
     for (const node of cleanedWorkflow.nodes) {
       if (Array.isArray(node.widgets_values)) {
-        node.widgets_values = node.widgets_values.map((val: any, idx: number) => {
+        node.widgets_values = node.widgets_values.map((val: any) => {
           if (typeof val === "string") {
             return sanitizeString(val);
           }
