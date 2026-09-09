@@ -90,7 +90,7 @@ export default function App() {
           className="text-xs px-3 py-1.5 rounded-lg border border-slate-700 bg-slate-800/80 text-slate-300 hover:text-white hover:border-slate-500 flex items-center gap-1.5 transition"
         >
           <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-          显存计算器: VRAMSpace
+          显存计算器: VRAMSpec
         </a>
       </header>
 
@@ -228,7 +228,7 @@ export default function App() {
                 rel="noreferrer"
                 className="text-xs text-indigo-400 hover:text-indigo-300 flex items-center gap-1"
               >
-                前往 VRAMSpace 计算显存占用 <ExternalLink className="w-3 h-3" />
+                前往 VRAMSpec 计算显存占用 <ExternalLink className="w-3 h-3" />
               </a>
             </div>
 
