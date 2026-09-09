@@ -1,0 +1,12 @@
+# ComfyDoctor
+
+> ComfyDoctor is a free, privacy-first, 100% browser-based diagnostic tool for Stable Diffusion & ComfyUI workflows.
+
+## Core Features
+- **Offline Inspection**: Parses PNG tEXt/iTXt chunks and JSON graphs completely in-browser. Zero server transmission.
+- **Dependency Extraction**: Identifies required Checkpoints, LoRAs, VAEs, and ControlNet files with their required target directories.
+- **Node Diagnosis**: Separates native core ComfyUI nodes from third-party custom nodes with direct links to search GitHub repositories.
+- **Privacy Sanitization**: Strips local OS absolute directories (e.g., `C:\Users\...` or `/home/...`) and accidental API key leaks before sharing.
+
+## Ecosystem
+Part of the VRAMSpec ecosystem (https://vramspec.com) for local AI workstation optimization and VRAM estimation.

@@ -2,12 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>comfy-doctor</title>
+    
+    <title>ComfyDoctor - ComfyUI Workflow Inspector & Privacy Sanitizer</title>
+    <meta name="description" content="Free, 100% client-side ComfyUI workflow inspector. Detect missing custom nodes, extract model dependencies (Checkpoints, LoRAs), and sanitize local paths & API keys before sharing." />
+    <meta name="keywords" content="ComfyUI, workflow inspector, ComfyUI missing nodes, ComfyUI model finder, ComfyUI sanitize workflow, remove API key ComfyUI" />
+    <meta name="author" content="VRAMSpec" />
+    <link rel="canonical" href="https://doctor.vramspec.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://doctor.vramspec.com/" />
+    <meta property="og:title" content="ComfyDoctor - ComfyUI Workflow Inspector & Sanitizer" />
+    <meta property="og:description" content="Inspect ComfyUI workflow dependencies and wipe sensitive local file paths & API keys offline directly in your browser." />
+    <meta property="og:site_name" content="VRAMSpec Tools" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ComfyDoctor - ComfyUI Workflow Inspector & Sanitizer" />
+    <meta name="twitter:description" content="100% offline ComfyUI workflow diagnostic tool. Detect missing nodes and sanitize personal privacy before sharing." />
+
+    <!-- GEO / Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "ComfyDoctor",
+      "url": "https://doctor.vramspec.com/",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "All modern web browsers",
+      "description": "A client-side utility tool for ComfyUI users to analyze workflow JSON/PNG metadata, extract required checkpoint/LoRA models, identify third-party custom nodes, and sanitize private system paths and API keys.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Extract ComfyUI workflow metadata from PNG and JSON files",
+        "Detect required Checkpoint, LoRA, VAE, and ControlNet models",
+        "Identify third-party custom extension nodes",
+        "Sanitize local file paths and exposed API keys",
+        "100% offline client-side execution with zero data upload"
+      ]
+    }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <!-- 静态 SEO 预载骨架：爬虫无需运行 JS 即可读取语义全文，用户端由 React 瞬间接管 -->
+    <div id="root">
+      <main style="max-width: 56rem; margin: 0 auto; padding: 3rem 1rem; font-family: sans-serif; color: #cbd5e1;">
+        <h1 style="color: #ffffff; font-size: 1.875rem; font-weight: 800;">ComfyDoctor</h1>
+        <p style="font-size: 0.875rem; color: #94a3b8;">
+          ComfyUI Workflow Inspector: Client-side dependency scan, privacy sanitization, and model search.
+        </p>
+        <div style="margin-top: 2rem; border-top: 1px solid #334155; padding-top: 2rem;">
+          <h2 style="color: #f1f5f9; font-size: 1.125rem;">Frequently Asked Questions</h2>
+          <div style="margin-top: 1rem;">
+            <h3 style="color: #e2e8f0; font-size: 0.875rem;">Does ComfyDoctor upload images or workflows?</h3>
+            <p style="font-size: 0.75rem; color: #94a3b8;">No. All parsing and sanitization execute strictly locally in your browser.</p>
+          </div>
+          <div style="margin-top: 1rem;">
+            <h3 style="color: #e2e8f0; font-size: 0.875rem;">What does it sanitize?</h3>
+            <p style="font-size: 0.75rem; color: #94a3b8;">It wipes absolute system directory paths, clears exposed API keys, and resets random seeds.</p>
+          </div>
+        </div>
+      </main>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
