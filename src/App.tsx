@@ -84,7 +84,7 @@ export default function App() {
           </p>
         </div>
         <a
-          href="https://vramspace.com"
+          href="https://vramspec.com"
           target="_blank"
           rel="noreferrer"
           className="text-xs px-3 py-1.5 rounded-lg border border-slate-700 bg-slate-800/80 text-slate-300 hover:text-white hover:border-slate-500 flex items-center gap-1.5 transition"
@@ -223,7 +223,7 @@ export default function App() {
                 所需模型文件 ({report.models.length})
               </h3>
               <a
-                href="https://vramspace.com"
+                href="https://vramspec.com"
                 target="_blank"
                 rel="noreferrer"
                 className="text-xs text-indigo-400 hover:text-indigo-300 flex items-center gap-1"
