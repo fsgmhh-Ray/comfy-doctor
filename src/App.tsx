@@ -289,6 +289,50 @@ export default function App() {
           </div>
         </section>
       )}
+      {/* GEO & SEO 语义化问答与知识沉淀区 */}
+      <section className="border-t border-slate-800 pt-10 mt-12 space-y-6 text-sm text-slate-400">
+        <h2 className="text-base font-semibold text-slate-200">
+          Frequently Asked Questions (FAQ)
+        </h2>
+        
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="p-4 rounded-lg bg-slate-900/40 border border-slate-800/80">
+            <h3 className="font-medium text-slate-300 mb-1">
+              Does ComfyDoctor upload my images or prompts to any server?
+            </h3>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              No. ComfyDoctor uses native Web APIs (DataView, TextDecoder) inside your browser. All file reading, metadata parsing, and JSON sanitization execute strictly on your local device.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-lg bg-slate-900/40 border border-slate-800/80">
+            <h3 className="font-medium text-slate-300 mb-1">
+              What does the workflow sanitization process remove?
+            </h3>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              It strips local operating system absolute paths (e.g., Windows drive letters and Unix user home paths), removes exposed OpenAI/third-party API tokens, and can optionally reset seeds to prevent metadata fingerprinting.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-lg bg-slate-900/40 border border-slate-800/80">
+            <h3 className="font-medium text-slate-300 mb-1">
+              How do I install missing custom nodes detected here?
+            </h3>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              Click the GitHub link on any detected custom node to locate its original repository. You can either clone it into your <code className="text-slate-300">ComfyUI/custom_nodes/</code> directory or search its name inside ComfyUI-Manager.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-lg bg-slate-900/40 border border-slate-800/80">
+            <h3 className="font-medium text-slate-300 mb-1">
+              How to estimate if my GPU can run this workflow?
+            </h3>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              Use our companion tool <a href="https://vramspec.com" target="_blank" rel="noreferrer" className="text-indigo-400 underline hover:text-indigo-300">VRAMSpec</a> to calculate the required VRAM based on the model architectures (e.g., Flux, SDXL, Wan2.1) and batch sizes detected in your workflow.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
